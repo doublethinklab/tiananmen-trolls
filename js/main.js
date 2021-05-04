@@ -1,4 +1,25 @@
+var tmp, tmpid;
 $.fancybox.defaults.animationEffect = "fade";
+
+$.fancybox.defaults.afterClose = function(){ 
+    console.log('afterClose'); 
+    if(tmpid) { 
+        $(tmpid).html(tmp); 
+        $(tmpid).find(".btn.next").on("click",function(e){instance.next();}); 
+        $(tmpid).find('.pinkfight').on("click",pinkfight_start);        
+        tmpid = null; 
+        tmp = null; 
+    }
+};
+
+// $.fancybox.defaults.beforeClose = function () { 
+//     console.log('close');
+//     $( this ).html(tmp);
+//     tmpid = null; tmp = null; 
+//     $(".btn.next").on("click",function(e){instance.next();}); 
+//     $('.pinkfight').on("click",pinkfight_start); 
+// }
+
 var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 // $.fancybox.defaults.hash = false;
 $.extend({
@@ -65,6 +86,7 @@ $(".vid,.videoBox .bg,.closeVideoBtn").on("click",function(e){
         stopVideo();
     }
 })
+
 var instance=null,$grid=null,userData={},loadN=9,scrollMorePost=false,ham_active=false;
 userData.loadList=[];
 $(document).ready(function() {
@@ -108,6 +130,9 @@ $(document).ready(function() {
             infobar: false
         });
     });
+
+
+
     $(".btn.next").on("click",function(e){
         instance.next();
     })
@@ -142,7 +167,35 @@ $(document).ready(function() {
         gutter:20
     })
 
+    $('.pinkfight').on("click", pinkfight_start); 
+
 });
+
+var back_mc=$('<a class="btn pinkfight_back">重新選擇</a>');
+$(back_mc).on("click", pinkfight_end);
+
+function pinkfight_start(e){ 
+
+    tmp = $( this ).parent().html(); 
+    tmpid = $( this ).parent();
+    console.log(tmpid);
+    var r = Math.floor(Math.random()*(9-1+1))+1;
+    var new_html = '<h1>你激怒了對方，你可能會收到這樣的回覆...</h1><img src="images/wrong_'+r+'.png" class="casePhoto" style="width:100%;"><a class="btn pinkfight_back">重新選擇</a>';
+    $(this).parent().html(new_html);
+    $(tmpid).find('.pinkfight_back').on("click", pinkfight_end);
+
+}
+
+function pinkfight_end(e) {
+    if(tmpid) {
+        console.log('back');    
+        $(tmpid).html(tmp); 
+        $(tmpid).find(".btn.next").on("click",function(e){instance.next();}); 
+        $(tmpid).find('.pinkfight').on("click",pinkfight_start);
+        tmpid = null; tmp = null;
+    }
+}
+
 function resizeFun(e){
     var sw=$(window).width(),sh=$(window).height(),vw=16,vh=9,minH=780;
     if(sh<minH){
