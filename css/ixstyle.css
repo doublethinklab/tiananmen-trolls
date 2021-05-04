@@ -706,12 +706,13 @@ section#mail {
     background: #ffd41f;
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 10px 20px;
-    width: 45%;
+    width: 80%;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1.5; }
     @media all and (max-width: 768px) {
       .fancybox-content a.btn {
-        width: 80%; } }
+        width: 90%; } }
   .fancybox-content ul.number {
     color: #FFF;
     margin-left: 20px;

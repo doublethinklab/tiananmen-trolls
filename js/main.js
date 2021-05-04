@@ -127,7 +127,8 @@ $(document).ready(function() {
         var openMC="."+$(this).attr("d-open");
         instance=$.fancybox.open($(openMC), {
             touch: false,
-            infobar: false
+            infobar: false,
+            arrows: false
         });
     });
 

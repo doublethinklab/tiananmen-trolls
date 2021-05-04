@@ -1004,12 +1004,12 @@ section#mail {
         background: #ffd41f;
         border: 1px solid rgba(255, 255, 255, 0.15);
         padding: 10px 20px;
-        width: 45%;
+        width: 80%;
         text-align: center;
         font-weight: bold;
-
+        line-height: 1.5;
         @include small-pad-width {
-            width: 80%;
+            width: 90%;
         }
     }
 
