@@ -169,7 +169,9 @@ $(document).ready(function() {
     })
 
     $('.pinkfight').on("click", pinkfight_start); 
-
+    if(getMobileOperatingSystem()=="iOS"){
+        $(".fixedbg").css({"background-attachment":"scroll"});
+    }
 });
 
 var back_mc=$('<a class="btn pinkfight_back">重新選擇</a>');
@@ -254,4 +256,18 @@ function shuffleArrayFun(array) {
         array[i] = array[j];
         array[j] = temp;
     }
+}
+
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+    return "unknown";
 }

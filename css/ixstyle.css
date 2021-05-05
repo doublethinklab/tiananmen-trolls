@@ -136,7 +136,8 @@ a.link {
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 .texts {
   text-align: center;
@@ -273,7 +274,7 @@ section#coverstory {
   overflow: hidden;
   background: url(../images/bg_cs_01.jpg) no-repeat;
   background-size: cover;
-  animation: cover 8s infinite; }
+  z-index: 9; }
   @media all and (max-width: 768px) {
     section#coverstory {
       padding: 80px 0;
@@ -283,15 +284,10 @@ section#coverstory {
       font-size: 33px; } }
 
 section#sect {
-  background: url(../images/bg_three_8964.jpg) no-repeat center;
-  background-size: cover;
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; }
+  overflow: hidden; }
   @media all and (max-width: 768px) {
     section#sect {
       background-position: right; } }
@@ -349,19 +345,35 @@ section#sect {
               display: inline-block;
               margin-top: 10px;
               z-index: 3; } }
+  section#sect .fixedbg {
+    position: absolute;
+    background-image: url(../images/bg_three_8964.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
 
 section#Evade {
   position: relative;
-  background: url(../images/bg_s3.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 100px 0; }
   @media all and (max-width: 768px) {
     section#Evade {
       padding: 60px 0; } }
+  section#Evade .fixedbg {
+    background-image: url(../images/bg_s3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
 
 .tabs {
   clear: both;
@@ -489,18 +501,28 @@ section#Evade {
 
 section#deny {
   padding: 100px 0 0px;
-  background: url(../images/bg_s4.jpg) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  position: relative; }
   @media all and (max-width: 768px) {
     section#deny {
       padding: 60px 0 0; } }
+  section#deny .fixedbg {
+    background-image: url(../images/bg_s4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   section#deny .content {
     padding-bottom: 100px; }
     @media all and (max-width: 768px) {
       section#deny .content {
         padding-bottom: 0; } }
   section#deny .denySample {
+    position: relative;
     color: #FFF;
     display: -ms-flexbox;
     display: flex;
@@ -531,10 +553,18 @@ section#deny {
 
 section#Rationalize {
   position: relative;
-  background: url(../images/bg_s5.jpg) no-repeat center top;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 100px 0; }
+  section#Rationalize .fixedbg {
+    background-image: url(../images/bg_s5.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   @media all and (max-width: 768px) {
     section#Rationalize {
       padding: 60px 0; } }
@@ -542,8 +572,8 @@ section#Rationalize {
 section#moreSample {
   position: relative;
   background: url(../images/bg_s6.jpg) no-repeat center top;
-  background-size: cover;
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-color: #282828; }
   @media all and (max-width: 768px) {
     section#moreSample {
       padding: 60px 0; } }
@@ -612,7 +642,9 @@ section#moreSample {
           width: 100%; } }
 
 section#mail {
-  padding: 100px 0 100px; }
+  padding: 100px 0 100px;
+  position: relative;
+  background-color: #282828; }
   @media all and (max-width: 768px) {
     section#mail h2 {
       font-size: 33px; } }

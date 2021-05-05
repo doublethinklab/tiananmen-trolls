@@ -1,9 +1,6 @@
-body.compensate-for-scrollbar {
-    overflow: hidden;
-}
-
 .fancybox-active {
-    height: auto;
+    height: 100%;
+    overflow: hidden;
 }
 
 .fancybox-is-hidden {
