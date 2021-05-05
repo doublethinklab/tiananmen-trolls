@@ -491,6 +491,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-caption__body {
+    font-size: 24px;
     max-height: 50vh;
     overflow: auto;
     pointer-events: all;
