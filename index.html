@@ -35,10 +35,14 @@
         </div>
     </div>
     <div id="cookies-eu-banner" style="display: none;">
-        <span>By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.</span>
-        <button id="cookies-eu-reject">Reject</button>
-        <button id="cookies-eu-accept">Accept</button>
-    </div>
+        <br>
+        <!-- <span>By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.</span> -->
+        <span>請問您是否同意我們使用 Google Analytics 處理您在本平台瀏覽過程中的使用情況，並產生匿名統計分析資料？</span>
+        <br>
+        <br>
+        <button id="cookies-eu-reject">拒絕</button>
+        <button id="cookies-eu-accept">同意</button>
+    </div>    
     <header class="header">
         <a href="https://doublethinklab.org" target="_blank"><img class="logo" src="images/dtl_logo.png"></a>
         <button class="hamburger hamburger--spin" type="button">
@@ -784,12 +788,12 @@
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-NEPPW8ZM57');
-                console.log("LOAD GA");
+                // console.log("LOAD GA");
 
         }, true);
 
-        /*testing*/
-        cookiesBanner.deleteCookie(cookiesBanner.cookieName);
+        // /*testing*/
+        // cookiesBanner.deleteCookie(cookiesBanner.cookieName);
 
     </script>  
 </body>
