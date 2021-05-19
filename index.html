@@ -25,15 +25,6 @@
     <script src="https://kit.fontawesome.com/cdb0ab35a4.js" crossorigin="anonymous"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEPPW8ZM57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NEPPW8ZM57');
-    </script>
 </head>
 <body style="overflow: hidden;">
     <div class="videoBox">
@@ -42,6 +33,11 @@
         <div id="player">
             <video muted autoplay playsinline><source src="images/video2.mp4" type="video/mp4"></video>
         </div>
+    </div>
+    <div id="cookies-eu-banner" style="display: none;">
+        <span>By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.</span>
+        <button id="cookies-eu-reject">Reject</button>
+        <button id="cookies-eu-accept">Accept</button>
     </div>
     <header class="header">
         <a href="https://doublethinklab.org" target="_blank"><img class="logo" src="images/dtl_logo.png"></a>
@@ -325,12 +321,12 @@
                         <img src="images/case3_01.png" width="100%" class="casePhoto">
                         <h1>如何回應？</h1>
                         <a class="btn pinkfight">你中共高官的孩子都在險惡的西方國家裡呢</a><br>
-                        <a class="btn next">既然都翻牆出來了，不妨去 google 一下吧。而且照你這麼說，天安門沒發生屠殺、和平解散的照片，我也是從來沒看過啊</a><br>
+                        <a class="btn next">既然都翻牆出來了，不妨去 Google 一下吧。而且照你這麼說，天安門沒發生屠殺、和平解散的照片，我也是從來沒看過啊</a><br>
                         <a class="btn pinkfight">先叫你主子把小孩都送回中國吧</a>
                         
                     </div>
                     <div class="inline-gallery3-1">
-                        <h1>既然都翻牆出來了，不妨去 google 一下吧。而且照你這麼說，天安門沒發生屠殺、和平解散的照片，我也是從來沒看過啊。</h1>
+                        <h1>既然都翻牆出來了，不妨去 Google 一下吧。而且照你這麼說，天安門沒發生屠殺、和平解散的照片，我也是從來沒看過啊。</h1>
                         <p>面對真心相信陰謀論的人，要改變對方的認知是困難的，因為對方敵視大眾的訊息來源，認為多數人都被某個邪惡機構所蒙蔽了。</p>
                         <p>若將討論的目標放在說服對方，大概會很難達成。對陰謀論的回應，應該以「讓路人知道陰謀論不是唯一說法」為目標。</p>
                         <p>可採行的方式包含張貼正確資訊、用對方的邏輯來質疑對方的訊息來源等等。</p>
@@ -347,12 +343,12 @@
                         <p>聲稱有西班牙媒體的畫面可以證實六四未曾發生。聲稱維基解密為他們背書。</p>
                         <img src="images/case3_02.png" width="100%" class="casePhoto">
                         <h1>如何回應？</h1>
-                        <a class="btn next">既然都翻牆出來了，不妨去 google 一下吧。西班牙那只是一間媒體，他有撤離的畫面，不代表其他媒體拍到的屠殺照片就是假的。</a><br>
+                        <a class="btn next">既然都翻牆出來了，不妨去 Google 一下吧。西班牙那只是一間媒體，他有撤離的畫面，不代表其他媒體拍到的屠殺照片就是假的。</a><br>
                         <a class="btn pinkfight">被洗腦的中國憤青又在否認六四</a><br>
                         <a class="btn pinkfight">不是説白人都欺壓中國人嗎？找人背書就知道找白種人了？</a>
                     </div>
                     <div class="inline-gallery3-2">
-                        <h1>既然都翻牆出來了，不妨去 google 一下吧。西班牙那只是一間媒體，他有撤離的畫面，不代表其他媒體拍到的屠殺照片就是假的。</h1>
+                        <h1>既然都翻牆出來了，不妨去 Google 一下吧。西班牙那只是一間媒體，他有撤離的畫面，不代表其他媒體拍到的屠殺照片就是假的。</h1>
                         <p>面對真心相信陰謀論的人，要改變對方的認知是困難的，因為對方認為多數人都被某個邪惡機構所蒙蔽了。</p>
                         <p>若將討論的目標放在說服對方，大概會很難達成。對陰謀論的回應，應該以「讓路人知道陰謀論不是唯一說法」為目標。</p>
                         <p>可採行的方式包含張貼正確資訊、用對方的邏輯來質疑對方的訊息來源等等。</p>
@@ -775,5 +771,26 @@
         <div class="posts clearfix"></div>
     </section>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/cookies-eu-banner.default.css"/>
+    <script src="js/cookies-eu-banner.js"></script>
+    <script>
+        var cookiesBanner = new CookiesEuBanner(function () {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.googletagmanager.com/gtag/js?id=G-NEPPW8ZM57','ga');
+                
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-NEPPW8ZM57');
+                console.log("LOAD GA");
+
+        }, true);
+
+        /*testing*/
+        cookiesBanner.deleteCookie(cookiesBanner.cookieName);
+
+    </script>  
 </body>
 </html>
