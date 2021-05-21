@@ -2,7 +2,7 @@ var tmp, tmpid;
 $.fancybox.defaults.animationEffect = "fade";
 
 $.fancybox.defaults.afterClose = function(){ 
-    console.log('afterClose'); 
+    // console.log('afterClose'); 
     if(tmpid) { 
         $(tmpid).html(tmp); 
         $(tmpid).find(".btn.next").on("click",function(e){instance.next();}); 
@@ -123,7 +123,14 @@ $(document).ready(function() {
         ham_active=false;        
         return false;
     })
+
     $('.fancy').on('click', function() {
+        // console.log(this);
+        category = 'main_case';
+        label = $(this).attr('id');
+        value = 1;
+        go_gtag('click', category, label, value);
+
         var openMC="."+$(this).attr("d-open");
         instance=$.fancybox.open($(openMC), {
             touch: false,
@@ -132,10 +139,16 @@ $(document).ready(function() {
         });
     });
 
-
-
     $(".btn.next").on("click",function(e){
         instance.next();
+        // console.log(e);
+        category = 'suggection';
+        label = $(this).attr('suggection');
+        value = 1;
+        go_gtag('click', category, label, value);
+        // console.log(category);
+        // console.log(label);
+        // console.log(value);
     })
     $(".hamburger").on("click",function(e){
         if(ham_active){
@@ -159,7 +172,7 @@ $(document).ready(function() {
         shuffleArrayFun(userData["loadList"]);
         setPostFun(userData["loadList"]);
     }).fail(function(msg){
-        console.log(msg);
+        // console.log(msg);
     })
 
     $grid = $('.posts').masonry({
@@ -179,9 +192,18 @@ $(back_mc).on("click", pinkfight_end);
 
 function pinkfight_start(e){ 
 
+    // console.log(e);
+    category = 'pinkfight';
+    label = event.currentTarget.innerText;
+    value = 1;
+    go_gtag('click', category, label, value);
+    // console.log(category);
+    // console.log(label);
+    // console.log(value);
+
     tmp = $( this ).parent().html(); 
     tmpid = $( this ).parent();
-    console.log(tmpid);
+    // console.log(tmpid);
     var r = Math.floor(Math.random()*(9-1+1))+1;
     var new_html = '<h1>你激怒了對方，你可能會收到這樣的回覆...</h1><img src="images/wrong_'+r+'.png" class="casePhoto" style="width:100%;"><a class="btn pinkfight_back">重新選擇</a>';
     $(this).parent().html(new_html);
@@ -191,7 +213,7 @@ function pinkfight_start(e){
 
 function pinkfight_end(e) {
     if(tmpid) {
-        console.log('back');    
+        // console.log('back');    
         $(tmpid).html(tmp); 
         $(tmpid).find(".btn.next").on("click",function(e){instance.next();}); 
         $(tmpid).find('.pinkfight').on("click",pinkfight_start);
@@ -245,6 +267,14 @@ function setPostFun(posts){
     }
     $grid.imagesLoaded(function(){
         $grid.masonry();
+    });
+
+    $('.box').on('click', function() {
+        // console.log(this);
+        category = 'more_case';
+        label = $(this).attr('href');
+        value = 1;
+        go_gtag('click', category, label, value);
     });
 }
 
