@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "purpose": "六四洗白論述案例庫（2026 年新蒐集，待人工審核）",
+    "collected_at": "2026-05-18",
+    "method": "Apify scraping (X, Reddit, web search) → Claude 初步分類",
+    "review_status": "PENDING_HUMAN_REVIEW",
+    "notes": "帳號名稱已用 [用戶] 取代；保留 source_url 供人工驗證後再決定是否揭露。發布時建議重新排版成截圖卡，不直接用原始截圖。",
+    "taxonomy": {
+      "evade": ["過度聚焦細節", "轉移焦點"],
+      "deny": ["攻擊既有訊息來源", "尋求其他權威", "假見證"],
+      "rationalize": ["同情加害者", "檢討受害者", "功利主義"]
+    }
+  },
+  "samples": [
+    {
+      "id": "2026-x-001",
+      "category": "合理化",
+      "subcategory": "檢討受害者",
+      "lang": "zh",
+      "platform": "X",
+      "text": "六四大部分學生是好的，但是被少數別有用心的人利用了、煽動了、慫恿了，以至於後期演變成暴亂行為。這一點中國應該學習歐美警察，對於暴恐分子就應該拿槍鎮壓。",
+      "engagement": {"likes": 18, "replies": 5, "retweets": 0},
+      "date": "2026-05-08",
+      "source_url": "https://x.com/_/status/2052669085272375785",
+      "classification_notes": "典型的『分裂論』：把抗議者切成『好學生』與『別有用心者』，最後合理化軍隊用槍鎮壓。同時混入合理化-同情加害者（中國應該學習歐美警察）。"
+    },
+    {
+      "id": "2026-x-002",
+      "category": "不正面回應",
+      "subcategory": "轉移焦點",
+      "lang": "zh",
+      "platform": "X",
+      "text": "六四事件放在中國近代史上是排不上號的小事件，值得全民討論麼？這事被反共外媒和反賊們包裹了一層又一層顛倒是非和謠言謊言的迷像，研究這事兒太耗時間且沒意義，再者政府已定案有詳情公報，感興趣自己去研究唄。你不懂事搗亂被你爸揍一頓老實了，還想你爸設立個紀念日？",
+      "engagement": {"likes": 113, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "三重洗白：(1) 否認事件嚴重性『排不上號』；(2) 攻擊訊息來源『反共外媒謠言』；(3) 合理化-同情加害者『被你爸揍一頓』把政府比喻成父親、抗議者比喻成不懂事的小孩。家庭隱喻是中國黨國敘事的經典套路。"
+    },
+    {
+      "id": "2026-x-003",
+      "category": "否認事件",
+      "subcategory": "攻擊既有訊息來源",
+      "lang": "zh",
+      "platform": "X",
+      "text": "奈何以美國為首的西方媒體的聲音比較大，不然你以為那些大饑荒死了幾千萬人、文革死了幾千萬人、六四死了幾十萬人這些謠言是怎麼流傳到現在還有人相信的...",
+      "engagement": {"likes": 8, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "把六四、大饑荒、文革三件事一起打包說成『西方媒體散佈的謠言』。同時混入了一個錯誤前提：死亡人數從未有人主張幾十萬，這是稻草人攻擊。"
+    },
+    {
+      "id": "2026-x-004",
+      "category": "否認事件",
+      "subcategory": "攻擊既有訊息來源",
+      "lang": "zh",
+      "platform": "X",
+      "text": "西方在天安門廣場捏造了針對中國的陰謀！誰是罪魁禍首？",
+      "engagement": {"likes": 6, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "簡短直接的『西方陰謀論』敘事。轉發/評論這類內容的帳號往往會在底下繼續引用『WikiLeaks 解密文件』『西班牙電視台沒拍到』等假權威佐證。"
+    },
+    {
+      "id": "2026-x-005",
+      "category": "合理化",
+      "subcategory": "功利主義",
+      "lang": "zh",
+      "platform": "X",
+      "text": "話說六四死的人也沒之前的政治運動以及人造天災死得多，為什麼紀念的人反而是最多的🤔",
+      "engagement": {"likes": 7, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "功利主義經典話術：用『死的人比較少』來淡化事件嚴重性，暗示『不值得紀念』。"
+    },
+    {
+      "id": "2026-x-006",
+      "category": "合理化",
+      "subcategory": "同情加害者",
+      "lang": "zh",
+      "platform": "X",
+      "text": "粉蛆看到伊朗神棍政府強迫平民組成人牆：用血肉築城長城，看哭了，人民萬歲😭😭｜粉蛆看到「波羅的海之路」人牆反抗蘇俄統治：西方顏色革命的陰謀，懷念蘇爹🥹🥹｜粉蛆看到六四學生在天安門自發組成人牆：這群逆賊罪不容誅，共產黨碾得好啊😋😋",
+      "engagement": {"likes": 468, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "注意：這則是『記錄洗白』的反串貼文，不是洗白本身。但第三段「共產黨碾得好啊」是寫實摘錄了真實小粉紅常見論述。可作為『同情加害者』類型的範例引用——標註是『模擬敘事，但這樣的留言實際大量存在』。"
+    },
+    {
+      "id": "2026-x-007",
+      "category": "不正面回應",
+      "subcategory": "轉移焦點",
+      "lang": "zh",
+      "platform": "X",
+      "text": "某些成天「滯納🐷」等支黑言論掛嘴邊的玩意就別假惺惺紀念六四了，平常大罵中國人恨不得中國人都去死，一到六月初就開始在乎中國人民的民主權利了？你要是真支黑就該支持中共，沒人比中共更懂怎麼壓榨中國人。",
+      "engagement": {"likes": 66, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "資格論變體：『你平常 X，憑什麼今天 Y？』。透過懷疑紀念者的動機，迴避紀念這件事本身的正當性。"
+    },
+    {
+      "id": "2026-x-008",
+      "category": "否認事件",
+      "subcategory": "假見證",
+      "lang": "en",
+      "platform": "X",
+      "text": "But this also shows how fake photos of the so-called \"Tiananmen Massacre\" were. There's no gruesome shit content in those photos because there is no massacre, unlike actual atrocities like [...]",
+      "engagement": {"likes": 30, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "用『照片不夠血腥所以是假的』來否認屠殺。技術上屬假見證／攻擊訊息來源混合：『我看了照片，所以我知道那是假的』。"
+    },
+    {
+      "id": "2026-x-009",
+      "category": "否認事件",
+      "subcategory": "攻擊既有訊息來源",
+      "lang": "en",
+      "platform": "X",
+      "text": "I can't believe the Xinjiang \"genocide\" was fake. I was so sure it was real, just like the Tiananmen Square massacre, the Nayirah testimony, the Libyan mass rapes, the Holodomor, Iraqi WMD, the Gulf of Tonkin attack, the Syrian chemical weapons attack[...]",
+      "engagement": {"likes": 17, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "『清單式洗白』：把六四綁到一串『被證實是假的西方戰爭宣傳』裡（Iraqi WMD、Gulf of Tonkin 等），藉由前後對比讓六四看起來也是同類謊言。這是近年英文圈最常見的反帝國主義左派洗白話術。"
+    },
+    {
+      "id": "2026-x-010",
+      "category": "不正面回應",
+      "subcategory": "轉移焦點",
+      "lang": "en",
+      "platform": "X",
+      "text": "LIKE TIANANMEN MASSACRE, NO COPS WERE KILLED ON J6 JUST PROTESTORS. Pelosi gave her personal security detail, Michael Byrd, shoot to kill orders for unarmed 5'2\" 115 lbs Ashli Babbitt.",
+      "engagement": {"likes": 60, "replies": null, "retweets": null},
+      "date": "2026",
+      "source_url": "x.com (URL 略)",
+      "classification_notes": "美國右翼版本的洗白：把六四當作『證明美國 1/6 事件被汙名化』的類比工具。事實面與意識形態都倒置——但功能上仍是『把六四說成抗議者才是加害者』。可放在合理化-同情加害者，也可放在轉移焦點。"
+    },
+    {
+      "id": "2026-reddit-001",
+      "category": "否認事件",
+      "subcategory": "攻擊既有訊息來源",
+      "lang": "en",
+      "platform": "Reddit (r/Sino)",
+      "text": "The greatest achievement of Western propaganda still has to be the myth of a June 4, 1989, Tiananmen Square massacre, with talk of hundreds if not thousands of protesting students mowed down by military machine guns.",
+      "engagement": {"upvotes": 66, "comments": 54},
+      "date": "2019-10-29",
+      "source_url": "https://www.reddit.com/r/Sino/comments/donzqd/",
+      "classification_notes": "r/Sino 是知名的親中 subreddit。這篇貼文是西方左派論述的標準起手式——把六四說成『西方宣傳的最大成就』。"
+    },
+    {
+      "id": "2026-reddit-002",
+      "category": "否認事件",
+      "subcategory": "假見證",
+      "lang": "en",
+      "platform": "Reddit (r/Hasan_Piker)",
+      "text": "The Tiananmen Square \"Massacre\" Never Happened - Hakim. [...] When I first watched this video last year, I couldn't believe it, and fact-checked everything in the video. Found all the original sources, and as usual, Hakim is correct. I was honestly shocked at how much Western propaganda had shaped my view of what happened at Tiananmen Square.",
+      "engagement": {"upvotes": 289, "comments": 62},
+      "date": "2025-11-11",
+      "source_url": "https://www.reddit.com/r/Hasan_Piker/comments/1ou066c/",
+      "classification_notes": "教科書級『假見證』：『我本來相信，後來看了某 YouTuber 的影片就清醒了』。Hakim 是英文反帝國主義 YouTuber，這支影片被 YouTube 下架後又被多次重新上傳，本身就是一個值得追蹤的洗白生態系。"
+    },
+    {
+      "id": "2026-reddit-003",
+      "category": "否認事件",
+      "subcategory": "尋求其他權威",
+      "lang": "en",
+      "platform": "Reddit (r/communism101)",
+      "text": "Any sources on why the Tiananmen Square massacre is a myth/exaggeration?",
+      "engagement": {"upvotes": 124, "comments": 34},
+      "date": "2020-12-04",
+      "source_url": "https://www.reddit.com/r/communism101/comments/k6v9mk/",
+      "classification_notes": "把『六四是謠言』當成既定立場、進一步求佐證資料的問句。flair 是 'Brigaded' 代表這篇被 Reddit 警告過。是一個典型的『先預設結論再找來源』案例。"
+    },
+    {
+      "id": "2026-reddit-004",
+      "category": "不正面回應",
+      "subcategory": "轉移焦點",
+      "lang": "en",
+      "platform": "Reddit (r/Damnthatsinteresting → r/SubredditDrama)",
+      "text": "「How do they honor the victims of the Tienanmen Square Massacre?」「by turning off the internet that day」｜「I can think of another massacre that could use some attention.」｜「But let's not talk about Tiananmen and the Uyghurs...」",
+      "engagement": {"upvotes": 1073, "comments": 541},
+      "date": "2025-12-14",
+      "source_url": "https://www.reddit.com/r/SubredditDrama/comments/1pmd8vt/",
+      "classification_notes": "反向 whataboutism 範例：在『中國民眾紀念南京大屠殺』的 thread 下，大量留言用『那六四呢？』『那新疆呢？』轉移焦點。這篇 SubredditDrama 把同類留言彙整起來，是現成的『轉移焦點』教學素材。"
+    },
+    {
+      "id": "2026-web-001",
+      "category": "否認事件",
+      "subcategory": "攻擊既有訊息來源",
+      "lang": "en",
+      "platform": "Web (Hampton Institute, 2025)",
+      "text": "「Despite being completely fictional, this popular narrative remains useful to the Western capitalist class as a method of demonizing the People's Republic of China.」（長文摘要：作者主張『天安門廣場屠殺』是美方反共宣傳，當晚廣場上沒有人死亡，事件已被 Jay Mathews（華盛頓郵報）、Richard Roth（CBS）等西方記者『自己承認是迷思』。）",
+      "engagement": {"comments": "Instagram poll 821 票，85% 投『沒有屠殺』"},
+      "date": "2025-06-07",
+      "source_url": "https://www.hamptonthink.org/read/debunking-the-tiananmen-square-massacre",
+      "classification_notes": "長文版的否認敘事，引用了多位西方記者『部分修正』的言論斷章取義（Mathews 與 Roth 修正的是『廣場上死人數字』，不是『沒有屠殺』）。這份是反例必讀——它把多個次手法（攻擊訊息來源、尋求其他權威、假見證）打包成一篇看似有引註的長文，最難拆解。"
+    },
+    {
+      "id": "2026-web-002",
+      "category": "否認事件",
+      "subcategory": "尋求其他權威",
+      "lang": "en",
+      "platform": "Web (Andy Boreham 在 X 的病毒貼文，已被 DW 事實查核)",
+      "text": "「This probably won't shock you, but the idea of the 'Tiananmen Square Massacre' is a US-led myth.」並附《Telegraph》2011 年報導『WikiLeaks: no bloodshed inside Tiananmen Square』截圖。",
+      "engagement": {"views": "3.7M", "shares": "5,000+"},
+      "date": "2024-06-03",
+      "source_url": "https://www.dw.com/en/fact-check-was-chinas-tiananmen-massacre-a-western-fabrication/a-69302040",
+      "classification_notes": "Andy Boreham 是上海《Shanghai Daily》的紐西蘭籍記者，被 ASPI 列為『中共宣傳員』。他的這串貼文是 2024 年最高聲量的英文洗白敘事。DW Fact Check 已逐條反駁。可直接拿 DW 的反駁版做為網站的回應範本。"
+    },
+    {
+      "id": "2026-web-003",
+      "category": "合理化",
+      "subcategory": "同情加害者",
+      "lang": "en",
+      "platform": "Web (Andy Boreham 在 X 的病毒貼文)",
+      "text": "「Of the 300-400 who were killed that night, more than half were soldiers.」「It's fair to say that soldiers were massacred, and they fought back.」",
+      "engagement": {"part_of_thread": "3.7M views"},
+      "date": "2024-06-03",
+      "source_url": "https://www.dw.com/en/fact-check-was-chinas-tiananmen-massacre-a-western-fabrication/a-69302040",
+      "classification_notes": "倒轉受害者—加害者：宣稱大部分死者是軍人，把學生塑造成『屠殺軍人的暴徒』。DW 事實查核確認此說為『False』——按官方數據軍人死亡幾十人，民眾估計 200-800 人。"
+    },
+    {
+      "id": "2026-web-004",
+      "category": "否認事件",
+      "subcategory": "假見證",
+      "lang": "en",
+      "platform": "Instagram (@midwesternmarx, 2026 reel + 留言區)",
+      "text": "「The REAL Truth about China's 'Tank Man' a Western Media Myth!」｜留言摘錄：「Tianenmen square massacre is also western propaganda. They repurposed the images from a factory worker strike where CIA instigated mindless violence leading to the Chinese military responding with force.」",
+      "engagement": {"likes": 14500, "comments": 895},
+      "date": "2026-02-18",
+      "source_url": "https://www.instagram.com/p/DU6GlMokTPi/",
+      "classification_notes": "2026 年新版本：連坦克人（Tank Man）這張幾乎沒爭議的照片都開始被說成『重新組裝的工人罷工畫面 + CIA 操弄』。隨著 AI 影像辨識普及，洗白方反而往『所有照片都是合成的』方向退守。值得追蹤這個 IG 帳號（@midwesternmarx）作為持續洗白來源。"
+    }
+  ]
+}
