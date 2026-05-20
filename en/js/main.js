@@ -205,7 +205,7 @@ function pinkfight_start(e){
     tmpid = $( this ).parent();
     // console.log(tmpid);
     var r = Math.floor(Math.random()*(9-1+1))+1;
-    var new_html = '<h1>你激怒了對方，你可能會收到這樣的回覆...</h1><img src="../images/wrong_'+r+'.png" class="casePhoto" style="width:100%;"><a class="btn pinkfight_back">Back</a>';
+    var new_html = '<h1>You provoked the other party. You might get a reply like this...</h1><img src="../images/wrong_'+r+'.png" class="casePhoto" style="width:100%;"><a class="btn pinkfight_back">Back</a>';
     $(this).parent().html(new_html);
     $(tmpid).find('.pinkfight_back').on("click", pinkfight_end);
 
